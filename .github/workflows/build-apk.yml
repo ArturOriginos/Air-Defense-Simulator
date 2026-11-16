@@ -18,7 +18,7 @@ jobs:
           distribution: temurin
           java-version: 17
       - run: npm install
-      - run: mkdir -p www && cp index.html style.css game.js www/
+      - run: mkdir -p www && cp -r index.html style.css game.js manifest.json img www/
       - run: npx cap add android
       - name: App icon
         run: |
