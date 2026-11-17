@@ -20,18 +20,21 @@
 </div>
 <div id="msg"></div>
 <div id="panel">
-  <div class="row"><button id="shopBtn"></button><button id="gear">⚙</button></div>
+  <div class="row"><button id="shopBtn"></button><button id="auto"></button><button id="gear">⚙</button></div>
   <h4 data-t="svcH"></h4><div id="sv" class="grid g3"></div>
   <h4 data-t="upg"></h4><div id="up" class="grid"></div>
 </div>
 <div id="shop" class="ov" hidden>
   <div class="shead"><b id="smoney"></b><button id="sclose" data-t="close"></button></div>
+  <div class="note" data-t="botNote"></div>
   <div id="slist"></div>
 </div>
 <div id="menu" class="ov">
   <img id="logo" src="img/logo.jpg" alt="Air Defense Simulator">
   <h1 class="sr" data-t="title"></h1>
   <p data-t="intro"></p>
+  <p><span data-t="diffT"></span>: <b id="dname"></b></p>
+  <div id="diff" class="row"><button data-d="1"><b>1</b></button><button data-d="2"><b>2</b></button><button data-d="3"><b>3</b></button><button data-d="4"><b>4</b></button></div>
   <button data-k="s300" id="mS300"></button>
   <button data-k="osa" id="mOsa"></button>
   <button id="gearM"><b data-t="setB"></b></button>
@@ -48,7 +51,17 @@
   <button data-l="auto"><b data-t="auto"></b></button>
   <button data-l="ru"><b>Русский</b></button>
   <button data-l="en"><b>English</b></button>
+  <p data-t="styleT"></p>
+  <div id="styles"><button data-st="radar"><b data-t="st_radar"></b></button><button data-st="camo"><b data-t="st_camo"></b></button><button data-st="staff"><b data-t="st_staff"></b></button><button data-st="desert"><b data-t="st_desert"></b></button><button data-st="crt"><b data-t="st_crt"></b></button></div>
+  <div id="colorBox" class="box"><p data-t="colorT"></p><div id="swatches" class="sw-row"></div></div>
+  <button id="eulaBtn"><b data-t="eulaBtn"></b></button>
   <button id="setClose"><b data-t="close"></b></button>
+</div>
+<div id="eula" class="ov" hidden>
+  <h1 data-t="eulaT"></h1>
+  <div class="row lg"><button data-l="ru"><b>Русский</b></button><button data-l="en"><b>English</b></button></div>
+  <div id="eulaTxt" data-t="eulaX"></div>
+  <button id="eulaOk"><b data-t="eulaOk"></b></button>
 </div>
 <script src="game.js"></script>
 </body>
